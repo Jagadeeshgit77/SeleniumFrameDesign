@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel = "tests" name="All Test Suite">
+
+    <groups>
+        <run>
+            <include name="ErrorHandling"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="TestComponents.Listeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/Krishnachaithanya/IdeaProjects/untitled7/SeleniumFrameDesign">
+        <classes>
+            <class name="Tests.ErrorValidations">
+                <methods>
+                    <include name="submitOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/Users/Krishnachaithanya/IdeaProjects/untitled7/SeleniumFrameDesign">
+        <classes>
+            <class name="Tests.SubmitOrderTest">
+                <methods>
+                    <include name="submitOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
